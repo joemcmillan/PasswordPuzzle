@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/myName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please enter the name you go by"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="50dp"></EditText>
+    
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Select three friends to play with:"
+        android:textSize="30sp"
+        />
+    
+    <Button 
+        android:id="@+id/playerone"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Your Partner"
+        android:onClick="onClick"
+        />
+    
+    
+    <TextView
+        android:id="@+id/playeroneName"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+     <Button 
+        android:id="@+id/playertwo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Blue Team Captain"
+        android:onClick="pickAgain"
+        />
+    <TextView
+        android:id="@+id/playertwoName"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+    <Button 
+        android:id="@+id/playerthree"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Blue Team Partner"
+        android:onClick="pickAgainAgain"
+        />
+    <TextView
+        android:id="@+id/playerthreeName"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+   
+
+</LinearLayout>

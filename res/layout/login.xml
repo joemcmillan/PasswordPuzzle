@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+        
+
+    <LinearLayout
+        android:id="@+id/redTeamLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#e32020"
+        android:layout_weight="1"
+        >
+        
+        
+        <ImageView 
+            android:id="@+id/redTeamLogo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/redteam"
+            android:paddingTop="25dp"/>
+        <EditText
+            android:id="@+id/redTeamName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Red Team"
+            android:textColor="#e32020"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:inputType="textCapWords"/>
+        <EditText
+            android:id="@+id/playerOneName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Player 1"
+            android:textColor="#e32020"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:inputType="textCapWords"/>
+        <EditText
+            android:id="@+id/playerTwoName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Player 2"
+            android:textColor="#e32020"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:inputType="textCapWords"/>
+        
+        <ImageView 
+            android:id="@+id/redTeamLocked"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lock"
+            android:visibility="invisible"
+            android:paddingTop="50dp"
+            android:paddingBottom="25dp"
+            android:onClick="redTeamLocked"/>
+            
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/blueTeamLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="#7661ed"
+        >
+        
+        
+        <ImageView 
+            android:id="@+id/blueTeamLogo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/blueteam"
+            android:paddingTop="25dp"/>
+        
+        <EditText
+            android:id="@+id/blueTeamName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Blue Team"
+            android:textColor="#3d20e3"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:inputType="textCapWords"/>
+        <EditText
+            android:id="@+id/playerThreeName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Player 1"
+            android:textColor="#3d20e3"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:inputType="textCapWords"/>
+        <EditText
+            android:id="@+id/playerFourName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Player 2"
+            android:textColor="#3d20e3"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:inputType="textCapWords"/>
+        <ImageView 
+            android:id="@+id/blueTeamLocked"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lock"
+            android:visibility="invisible"
+            android:paddingTop="50dp"
+            android:paddingBottom="25dp"
+            android:onClick="blueTeamLocked"/>
+            
+        
+    </LinearLayout>
+
+</LinearLayout>

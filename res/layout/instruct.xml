@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#e9d859">
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10sp"
+        android:text="How the Game Works:"
+        android:textColor="#000000"></TextView>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10sp"
+        android:text="Player One is partners with Player Two"
+        android:textColor="#000000"></TextView>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10sp"
+        android:text="Player Three is partners with Player Four"
+        android:textColor="#000000"></TextView>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10sp"
+        android:text="One is given a word and gives a hint to Two"
+        android:textColor="#000000"></TextView>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10sp"
+        android:text="Two guesses what the word was"
+        android:textColor="#000000"></TextView>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10sp"
+        android:text="And if he is wrong then Three gives another hint for that word"
+        android:textColor="#000000"></TextView>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10sp"
+        android:text="Then four gets to guess "
+        android:textColor="#000000"></TextView>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10sp"
+        android:text="And if two or four guesses correctly, a new word is drawn"
+        android:textColor="#000000"></TextView>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10sp"
+        android:text="Press back button to continue..."
+        android:textColor="#000000"></TextView>
+
+</LinearLayout>

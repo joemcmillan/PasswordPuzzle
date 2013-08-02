@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+     android:layout_height="fill_parent">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text = ""
+        android:textSize="25sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"></TextView>
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text = ""
+        android:textSize="25sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"></TextView>
+ 
+    <EditText
+        android:id="@+id/hint"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:inputType="text"></EditText>
+
+    <ImageView
+        android:id="@+id/sendhint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_gravity="center" 
+        android:onClick="sendHint"
+        android:src="@drawable/sendclue"
+        android:visibility="gone" />
+    
+        <ImageView
+        android:id="@+id/sendguess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_gravity="center" 
+        android:onClick="sendHint"
+        android:src="@drawable/sendguess"
+        android:visibility="gone" />
+     
+        <ImageView
+        android:id="@+id/hintlist"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" 
+        android:background="#ffffff"
+        android:src="@drawable/hintlist" />
+        
+    <TextView
+        android:id="@+id/hintList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"></TextView>
+    
+	<RelativeLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="70dp"
+        android:background="#e32020">
+	    
+	    <ImageView
+        android:id="@+id/redteam"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content" 
+        android:background="#ffffff"
+        android:src="@drawable/redteam" />
+	    
+    <TextView
+        android:id="@+id/teamone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/redteam"
+        android:textSize="15sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="28dp"></TextView>
+    
+    <TextView
+        android:id="@+id/scoreRed"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="28dp"></TextView>
+    </RelativeLayout>
+    
+	<RelativeLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="70dp"
+        android:background="#7661ed">
+    
+	<ImageView
+        android:id="@+id/blueteam"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content" 
+        android:background="#ffffff"
+        android:src="@drawable/blueteam" />
+	    
+	    
+    <TextView
+        android:id="@+id/teamtwo"
+        android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/blueteam"
+        android:textSize="15sp"
+        android:layout_marginTop="28dp"></TextView>
+    
+    
+    <TextView
+        android:id="@+id/scoreBlue"
+        android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="28dp"></TextView>
+    </RelativeLayout>
+    
+	<ImageView
+        android:id="@+id/quitgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_gravity="center" 
+        android:onClick="quitGame"
+        android:src="@drawable/quitgame"/>
+    
+	
+    
+	   
+</LinearLayout>
+</ScrollView>

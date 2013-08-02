@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#000000">
+    
+    <TextView 
+        android:id="@+id/clueWordDisplay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textColor="#e6d767"
+        android:background="#000000"/>
+    
+    <LinearLayout 
+        android:id="@+id/helperLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000">
+        
+        <ImageView 
+            android:id="@+id/findDefinition"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/definition"
+            android:onClick="findDefinition"/>
+        <ImageView 
+            android:id="@+id/wordShuffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/wordshuffle"
+            android:onClick="shuffleWord"/>
+        <ImageView 
+            android:id="@+id/goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/goback"
+            android:onClick="goBack"/>
+        
+    </LinearLayout>
+    
+        <ImageView 
+        android:id="@+id/startGame"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:visibility="visible"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:src="@drawable/gamestart"
+        android:background="#000000"
+        android:onClick="beginGame"/>
+        
+    <ImageView 
+        android:id="@+id/loading"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:visibility="gone"
+        android:src="@drawable/load"
+        android:background="#000000"/>
+    
+    	<WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:visibility="gone"
+            />
+        
+    	<TextView 
+        	android:id="@+id/clueGiver"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:gravity="center"
+            android:text="Giving clues: "
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:background="#e6d767"/>
+    
+    
+     <RelativeLayout 
+        android:id="@+id/redTeamScore"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#e32020"
+        android:layout_marginTop="20dp">
+        
+        <ImageView 
+            android:id="@+id/redTeamCheck"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/greencheck"
+            android:onClick="redTeamRight"
+            android:visibility="invisible"/>
+             
+    	<TextView
+            android:id="@+id/clueGiverRed" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/redTeamCheck" 
+            android:text="Sally"
+            android:textSize="40sp"
+            android:textColor="#ffffff"/>
+        
+        <TextView 
+            android:id="@+id/redPoints"
+         	android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="40sp"
+            android:textColor="#ffffff" 
+            android:layout_toLeftOf="@+id/redTeamX" />
+        <ImageView 
+            android:id="@id/redTeamX"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/redx"
+            android:layout_alignParentRight="true"
+            android:onClick="redTeamWrong"
+            android:visibility="invisible"/>
+        
+        
+</RelativeLayout>
+
+          <RelativeLayout 
+        android:id="@+id/blueTeamScore"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#7661ed"
+        android:layout_marginTop="20dp">
+        
+        <ImageView 
+            android:id="@+id/blueTeamCheck"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/greencheck"
+            android:onClick="blueTeamRight"
+            android:visibility="invisible"/>
+             
+    	<TextView
+            android:id="@+id/clueGiverBlue" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/blueTeamCheck" 
+            android:text="Ted"
+            android:textSize="40sp"
+            android:textColor="#ffffff"/>
+        
+        <TextView 
+            android:id="@+id/bluePoints"
+         	android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="40sp"
+            android:textColor="#ffffff" 
+            android:layout_toLeftOf="@+id/blueTeamX" />
+        <ImageView 
+            android:id="@id/blueTeamX"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/redx"
+            android:layout_alignParentRight="true"
+            android:onClick="blueTeamWrong"
+            android:visibility="invisible"/>
+        
+        
+</RelativeLayout>
+    
+
+</LinearLayout>
